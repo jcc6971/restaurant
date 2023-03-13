@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,8 +34,10 @@
             </div>
         </div>
         <div class="titre">
-            <h2>Welcome to</h2>
-            <h1>the resto</h1>
+            <div class="title">
+                <h2>Welcome to</h2>
+                <h1>the resto</h1>
+            </div>
             <img src="./assets/img/ic-plate-big.png" alt="symbole couverts">
             <p>we serve only the freshest ingredients !</p>
         </div>
@@ -145,12 +148,112 @@
                     </div>
                     <div class="formulaire">
                         <form action="" method="post">
-                            <input type="select" name="people" id="people">
+                            <select name="people" id="people">
+                                <option value="">People</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">5</option>
+                            </select>
+                            <input id="date" type="date" value="2023-06-01">
+                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                            <input type="text" id="name" name="name" placeholder="Name">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required
+                                placeholder="Phone">
+                            <input type="email" id="email" placeholder="Email" required>
+                            <button>BOOK NOW</button>
+
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section4">
+            <h2>Upcoming</h2>
+            <h3>our event</h3>
+            <img src="./assets/img/ic-plate-big.png" alt="symbole couverts">
+            <div class="ourevent">
+                <div class="event">
+                    <img src="./assets/img/event-01.jpg" alt="ev1">
+                    <div class="date">
+                        <h3>08</h3>
+                        <p>July</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Night Inspirescu Party</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i
+                                class="fa-regular fa-clock">10:PM - 6:aM</i></p>
+                        <h4>BUY TICKETS</h4>
+                    </div>
+
+                </div>
+                <div class="event">
+                    <img src="./assets/img/event-02.jpg" alt="ev2">
+                    <div class="date">
+                        <h3>08</h3>
+                        <p>July</p>
+                    </div>
+                    <div class="detail">
+                        <h3>DJ RobagRuhme</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i
+                                class="fa-regular fa-clock">10:PM - 6:aM</i></p>
+                        <h4>BUY TICKETS</h4>
+                    </div>
+                    <div class="event">
+                        <img src="./assets/img/event-01.jpg" alt="ev1">
+                        <div class="date">
+                            <h3>08</h3>
+                            <p>July</p>
+                        </div>
+                        <div class="detail-right">
+                            <img src="./assets/img/event-03.jpg" alt="ev3">
+                            <h3>Thousand celebrities at Johnie Night</h3>
+                            <p><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i
+                                    class="fa-regular fa-clock">10:PM - 6:aM</i></p>
+                            <h4>BUY TICKETS</h4>
+                        </div>
+                    </div>
+        </section>
+        <section class="section5">
+            <img src="./assets/img/avatar-02.jpg" alt="Russel s">
+            <div class="russel">
+                <p>&#10077;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque architecto ea deleniti
+                    eveniet minus quibusdam dolor consectetur facilis iste? Eius tempora placeat quos architecto,
+                    deleniti voluptas, perferendis et in numquam esse porro minima ducimus. Libero eius, sequi neque
+                    repellat ea assumenda quidem repudiandae! Totam quae deleniti ab commodi ducimus sit!&#10078;</p>
+                <h3>Russel Stepehns</h3>
+                <h4>CEO - HeadPasion</h4>
+            </div>
+
+        </section>
+        <footer>
+            <div class="foot">
+                <div class="footer-left">
+                    <h2>Resto</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur culpa modi tempore esse cumque
+                        beatae, tempora expedita repellendus asperiores quis nam placeat laudantium iure numquam?</p>
+                </div>
+                <div class="footer-right">
+                    <div class="newletter">
+                        <form action="" method="post">
+                            <label for="email">NEWSLETTER</label>
+                            <input type="email" name="email" id="email">
+                        </form>
+                    </div>
+                    <div class="social">
+                        <h3>FOLLOW US:</h3>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </main>
 
 </body>

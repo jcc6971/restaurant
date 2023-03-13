@@ -1,0 +1,84 @@
+header {
+  min-height: 100vh;
+  background: url(./assets/img/bg-slider-06.jpg) center/cover;
+  .menu {
+    width: 85%;
+    margin: 0 auto;
+    color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    h2 {
+      font-size: 3rem;
+    }
+    nav {
+      width: 60%;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+    }
+    .social {
+      width: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 950px) {
+      ul {
+        display: none;
+      }
+      .social {
+        width: 60%;
+      }
+    }
+  }
+  .titre {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      line-height: 60px;
+    }
+    h2 {
+      color: rgb(166, 114, 69);
+      font-size: 4.5rem;
+      font-weight: 100;
+    }
+    h1 {
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      color: rgb(238, 238, 238);
+      letter-spacing: 10px;
+      font-size: 5rem;
+    }
+    img {
+      width: 40px;
+      margin: 50px auto;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      color: rgb(238, 238, 238);
+      font-size: 1.2rem;
+      letter-spacing: 7px;
+    }
+    @media screen and (max-width: 950px) {
+      h2 {
+        font-size: 3rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
