@@ -176,7 +176,7 @@ h5 {
 }
 @media screen and (max-width: 700px) {
   .section1-left {
-    height: 65vh;
+    height: 80vh;
   }
 }
 .section1-left .bordure {
@@ -206,8 +206,10 @@ h5 {
   color: grey;
   text-transform: uppercase;
 }
-.section1-left .bordure .title {
-  line-height: 30px;
+@media screen and (max-width: 700px) {
+  .section1-left .bordure .title {
+    line-height: 30px;
+  }
 }
 .section1-left .title2 {
   line-height: 25px;
