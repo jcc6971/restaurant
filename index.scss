@@ -23,7 +23,85 @@ body {
   img {
     width: 100%;
   }
+  #icplate,
+  #icplatebig {
+    width: 40px;
+  }
 }
 h2 {
   font-family: "Allura", cursive;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+.section1 {
+  min-height: 60vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (max-width: 700px) {
+    display: block;
+
+    .section1-right {
+      display: none;
+    }
+  }
+}
+.section1-left {
+  background: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 700px) {
+    height: 65vh;
+  }
+  .bordure {
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: rgb(166, 114, 69) dashed 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h4 {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+    h5 {
+      color: grey;
+      text-transform: uppercase;
+    }
+    .title {
+      line-height: 30px;
+    }
+  }
+  .title2 {
+    line-height: 25px;
+  }
+  h2 {
+    color: rgb(166, 114, 69);
+    font-size: 3rem;
+    font-weight: 100;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+  }
+  #avatar1 {
+    width: 90px;
+    border-radius: 100px;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+}
+.section1-right {
+  background: url(./assets/img/store-01.jpg) center/cover;
 }
