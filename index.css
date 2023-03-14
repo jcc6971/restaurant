@@ -204,43 +204,6 @@ header .titre p {
   background: url(./assets/img/store-01.jpg) center/cover;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style: none;
-}
-
-body {
-  text-align: center;
-  background: rgb(33, 32, 30);
-}
-body img {
-  width: 100%;
-}
-body #icplate,
-body #icplatebig {
-  width: 40px;
-}
-
-h2 {
-  font-family: "Allura", cursive;
-}
-
-h3 {
-  font-family: "Poppins", sans-serif;
-}
-
-h4,
-h5 {
-  font-family: "Roboto", sans-serif;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-}
-
 .section2 {
   min-height: 120vh;
   background: url(./assets/img/bg-menu-01.jpg) no-repeat;
@@ -375,4 +338,41 @@ p {
     width: 60px;
     height: 60px;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  background: rgb(33, 32, 30);
+}
+body img {
+  width: 100%;
+}
+body #icplate,
+body #icplatebig {
+  width: 40px;
+}
+
+h2 {
+  font-family: "Allura", cursive;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=index.css.map */
