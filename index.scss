@@ -10,7 +10,9 @@
   font-family: roboto;
   src: url(./assets/fonts/Roboto-Light.ttf);
 }
+$jaune: rgb(166, 114, 69);
 @import "./assets/layout/header";
+@import "./assets/layout/section1";
 * {
   margin: 0;
   padding: 0;
@@ -38,72 +40,112 @@ h4,
 h5 {
   font-family: "Roboto", sans-serif;
 }
+p {
+  font-family: "Roboto", sans-serif;
+}
 
-.section1 {
-  min-height: 60vh;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  @media screen and (max-width: 700px) {
-    display: block;
-
-    .section1-right {
-      display: none;
+.section2 {
+  min-height: 120vh;
+  background: url(./assets/img/bg-menu-01.jpg) no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  @media screen and (max-width: 500px) {
+    background-size: auto;
+  }
+}
+.discover {
+  width: 52%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .title {
+    h2 {
+      color: $jaune;
+      font-size: 3rem;
+      font-weight: 100;
+      padding: 70px 0 30px 0;
+    }
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(238, 238, 238);
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+    li {
+      border-bottom: 2px solid rgb(238, 238, 238);
+      margin: 30px 0;
+      padding: 20px 0;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 500px) {
+    nav ul {
+      font-size: 0.8rem;
     }
   }
 }
-.section1-left {
+
+.tableau {
   background: rgb(238, 238, 238);
+  border-top: $jaune solid 5px;
+  margin-bottom: 140px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  @media screen and (max-width: 700px) {
-    height: 80vh;
+  flex-wrap: wrap;
+}
+.menu-seul {
+  width: 500px;
+  height: 200px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: $jaune dashed 2px;
+  @media screen and (max-width: 1050px) {
+    width: 90%;
   }
-  .bordure {
-    width: 95%;
-    height: 95%;
-    margin: 0 auto;
-    padding: 0 10px;
-    border: rgb(166, 114, 69) dashed 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    h4 {
-      font-size: 1.5rem;
-      text-transform: capitalize;
+
+  .prix {
+    color: $jaune;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
     }
-    h5 {
-      color: grey;
+  }
+  .title {
+    margin: 0 25px 0 10px;
+    text-align: left;
+    h3 {
       text-transform: uppercase;
+      font-weight: 150;
     }
-    .title {
-      @media screen and (max-width: 700px) {
-        line-height: 30px;
+    p {
+      text-transform: capitalize;
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: 500px) {
+      h3 {
+        font-size: 0.8rem;
+      }
+      p {
+        font-size: 0.8rem;
       }
     }
   }
-  .title2 {
-    line-height: 25px;
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 150px;
+    @media screen and (max-width: 500px) {
+      width: 60px;
+      height: 60px;
+    }
   }
-  h2 {
-    color: rgb(166, 114, 69);
-    font-size: 3rem;
-    font-weight: 100;
-  }
-  h3 {
-    text-transform: uppercase;
-    font-size: 1.7rem;
-  }
-  #avatar1 {
-    width: 90px;
-    border-radius: 100px;
-  }
-  p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 100;
-  }
-}
-.section1-right {
-  background: url(./assets/img/store-01.jpg) center/cover;
 }
