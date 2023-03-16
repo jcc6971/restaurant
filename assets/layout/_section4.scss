@@ -1,0 +1,133 @@
+.section4 {
+  min-height: 100vh;
+  .title {
+    line-height: 60px;
+    h2 {
+      color: $jaune;
+      font-size: 3.5rem;
+      font-weight: 100;
+    }
+    h3 {
+      text-transform: uppercase;
+      color: $blanc;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+  }
+  #icplatebig {
+    padding: 50px 0;
+  }
+
+  .ourevent {
+    .date {
+      transform: translateX(-50%) translateY(-50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: rgb(33, 32, 30);
+      color: $blanc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.5rem;
+      padding: 7% 12%;
+      h3 {
+        font-weight: 100;
+        font-size: 2.2rem;
+      }
+    }
+    width: 65%;
+
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    h4 {
+      font-size: 1.8 rem;
+      letter-spacing: 2px;
+      font-weight: 100;
+    }
+    p {
+      color: gray;
+    }
+    i {
+      margin: 10px;
+    }
+    h5 {
+      font-size: 1.3rem;
+
+      letter-spacing: 2px;
+    }
+    .event-left {
+      .date {
+        top: 50%;
+        left: 50%;
+      }
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      .event {
+        background: $blanc;
+        margin: 15px 30px;
+        display: flex;
+
+        .imgdate {
+          width: 40%;
+
+          position: relative;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      .detail {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h4 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .event-right {
+      background: url(./assets/img/event-03.jpg);
+      height: 93%;
+      display: flex;
+
+      .cadreblanc {
+        position: relative;
+        margin: 30px auto;
+        width: 90%;
+        background: $blanc;
+        .date {
+          top: 65px;
+        }
+        h4 {
+          padding-top: 160px;
+          font-size: 1.8rem;
+          letter-spacing: 2px;
+          font-weight: 100;
+        }
+        p {
+          font-size: 1.2;
+          color: gray;
+          letter-spacing: 2px;
+        }
+        i {
+          margin: 10px;
+        }
+        h5 {
+          font-size: 1.1rem;
+          padding-top: 60px;
+
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    display: none;
+  }
+}

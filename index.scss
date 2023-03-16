@@ -11,10 +11,13 @@
   src: url(./assets/fonts/Roboto-Light.ttf);
 }
 $jaune: rgb(166, 114, 69);
+$blanc: rgb(238, 238, 238);
 @import "./assets/layout/header";
 @import "./assets/layout/section1";
 @import "./assets/layout/section2";
-@import "./assets/layout/section3.scss";
+@import "./assets/layout/section3";
+@import "./assets/layout/section4";
+
 * {
   margin: 0;
   padding: 0;
