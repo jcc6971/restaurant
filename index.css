@@ -508,7 +508,7 @@ button {
 }
 
 .section4 {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 .section4 .title {
   line-height: 60px;
@@ -535,32 +535,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   grid-template-columns: 60% 40%;
-}
-.section4 .ourevent .date {
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: rgb(33, 32, 30);
-  color: rgb(238, 238, 238);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.5rem;
-  padding: 7% 12%;
-}
-.section4 .ourevent .date h3 {
-  font-weight: 100;
-  font-size: 2.2rem;
 }
 .section4 .ourevent h4 {
   font-size: 1.8 rem;
@@ -592,7 +566,7 @@ button {
 }
 .section4 .ourevent .event-left .event {
   background: rgb(238, 238, 238);
-  margin: 15px 30px;
+  margin: 15px 30px 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,10 +628,98 @@ button {
   padding-top: 60px;
   letter-spacing: 2px;
 }
+.section4 .ourevent .date {
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgb(33, 32, 30);
+  color: rgb(238, 238, 238);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  padding: 7% 12%;
+}
+.section4 .ourevent .date h3 {
+  font-weight: 100;
+  font-size: 2.2rem;
+}
 @media screen and (max-width: 1050px) {
   .section4 {
     display: none;
   }
+}
+
+.section5 {
+  height: 80vh;
+  position: relative;
+}
+.section5 .gmap {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 400px 0;
+  background: url(./assets/img/gmap.jpg) center/cover;
+}
+.section5 .rus {
+  position: absolute;
+  top: -350px;
+  z-index: 5;
+}
+.section5 .russel {
+  position: relative;
+  width: 65%;
+  margin: 200px auto;
+  background: rgb(238, 238, 238);
+}
+@media screen and (max-width: 1050px) {
+  .section5 .russel {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+.section5 .russel p {
+  line-height: 40px;
+  font-size: 1.2rem;
+  padding: 50px;
+}
+@media screen and (max-width: 1050px) {
+  .section5 .russel p {
+    font-size: 0.8rem;
+  }
+}
+.section5 .russel h4 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+@media screen and (max-width: 1050px) {
+  .section5 .russel h4 {
+    font-size: 1.7rem;
+  }
+}
+.section5 .russel h5 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+  padding: 50px;
+}
+.section5 img {
+  width: 8%;
+  border-radius: 200px;
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 * {
